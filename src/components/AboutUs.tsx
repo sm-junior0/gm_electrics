@@ -23,6 +23,7 @@ const AboutUs = () => {
                 alt="Electrical engineers at work" 
                 className="w-full h-auto rounded-lg shadow-xl relative z-10"
               />
+              
               {/* <div className="absolute -bottom-6 -right-6 bg-gm-blue/90 text-white py-4 px-6 rounded-lg shadow-lg">
                 <p className="font-semibold text-xl">Established 2004</p>
               </div> */}

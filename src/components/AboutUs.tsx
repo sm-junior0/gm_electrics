@@ -1,5 +1,6 @@
 
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import about from '../assets/images/about.jpg'
 
 const AboutUs = () => {
   return (
@@ -18,13 +19,13 @@ const AboutUs = () => {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-64 h-64 bg-gm-yellow opacity-20 rounded-lg"></div>
               <img 
-                src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
+                src={about}
                 alt="Electrical engineers at work" 
                 className="w-full h-auto rounded-lg shadow-xl relative z-10"
               />
-              <div className="absolute -bottom-6 -right-6 bg-gm-blue/90 text-white py-4 px-6 rounded-lg shadow-lg">
+              {/* <div className="absolute -bottom-6 -right-6 bg-gm-blue/90 text-white py-4 px-6 rounded-lg shadow-lg">
                 <p className="font-semibold text-xl">Established 2004</p>
-              </div>
+              </div> */}
             </div>
           </div>
           

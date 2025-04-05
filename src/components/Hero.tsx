@@ -1,7 +1,10 @@
 
 import { Button } from "@/components/ui/button";
 import { Wrench, Zap, Building, Truck } from "lucide-react";
-
+import electrician from '../assets/images/electrician.jpg'
+import construct from '../assets/images/construct.jpg'
+import road from '../assets/images/road.jpeg'
+import stadium from '../assets/images/stadium.jpg'
 const Hero = () => {
   return (
     <section id="home" className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-gm-blue to-gm-darkblue text-white relative overflow-hidden">
@@ -16,7 +19,7 @@ const Hero = () => {
         <div className="absolute top-0 right-0 w-full h-full opacity-20 bg-gradient-to-l from-black to-transparent"></div>
         <div className="absolute top-0 right-0 w-2/3 h-full lg:block hidden">
           <img 
-            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789" 
+            src={electrician} 
             alt="Electrical engineers at work" 
             className="w-full h-full object-cover object-center opacity-30"
           />
@@ -67,9 +70,9 @@ const Hero = () => {
         {/* Image strip at bottom */}
         <div className="mt-16 hidden lg:flex gap-4 justify-center animate-fade-in">
           {[
-            "https://images.unsplash.com/photo-1621905251189-08b45d6a269e",
-            "https://images.unsplash.com/photo-1581094794329-c8112a89af12",
-            "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1"
+            construct,
+            road,
+            stadium
           ].map((img, index) => (
             <div key={index} className="w-64 h-36 rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition-transform hover:-translate-y-1">
               <img src={img} alt={`Engineer work ${index + 1}`} className="w-full h-full object-cover" />

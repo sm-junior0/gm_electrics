@@ -1,19 +1,22 @@
-import { Badge } from "@/components/ui/badge"
-import { CheckCircle } from "lucide-react"
-import poles from '../assets/images/poles.jpeg'
-import stadium from '../assets/images/stadium.jpg'
-import airport from '../assets/images/kia.jpg'
+import { Badge } from "@/components/ui/badge";
+import { CheckCircle } from "lucide-react";
+import poles from "../assets/images/poles.jpeg";
+import stadium from "../assets/images/stadium.jpg";
+import airport from "../assets/images/kia.jpg";
 
 const Projects = () => {
   return (
     <section id="projects" className="py-16 md:py-24 bg-gm-blue text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Engineering Excellence</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Engineering Excellence
+          </h2>
           <div className="w-20 h-1 bg-gm-yellow mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto opacity-90">
-            GM Electrics Co. Ltd continues to lead the way in electrical engineering, delivering high-performance
-            solutions for major infrastructure projects.
+            GM Electrics Co. Ltd continues to lead the way in electrical
+            engineering, delivering high-performance solutions for major
+            infrastructure projects.
           </p>
         </div>
 
@@ -21,11 +24,16 @@ const Projects = () => {
           {/* Airport Project */}
           <div className="bg-white/10 rounded-xl p-8 backdrop-blur-sm">
             <div className="flex items-center gap-3 mb-4">
-              <Badge className="bg-gm-yellow text-gm-darkblue hover:bg-gm-yellow/90">Aviation</Badge>
-              <h3 className="text-2xl font-semibold">Kigali International Airport</h3>
+              <Badge className="bg-gm-yellow text-gm-darkblue hover:bg-gm-yellow/90">
+                Aviation
+              </Badge>
+              <h3 className="text-2xl font-semibold">
+                Kigali International Airport
+              </h3>
             </div>
             <p className="opacity-90 mb-6">
-              MEP Installation – Aircraft Recovery Storage at Kigali International Airport ✈️
+              MEP Installation – Aircraft Recovery Storage at Kigali
+              International Airport ✈️
             </p>
             <div className="space-y-3">
               {[
@@ -53,10 +61,14 @@ const Projects = () => {
           {/* Stadium Project */}
           <div className="bg-white/10 rounded-xl p-8 backdrop-blur-sm">
             <div className="flex items-center gap-3 mb-4">
-              <Badge className="bg-gm-yellow text-gm-darkblue hover:bg-gm-yellow/90">Sports</Badge>
+              <Badge className="bg-gm-yellow text-gm-darkblue hover:bg-gm-yellow/90">
+                Sports
+              </Badge>
               <h3 className="text-2xl font-semibold">Stadium Developments</h3>
             </div>
-            <p className="opacity-90 mb-6">Design & Implementation – Ngoma, Bugesera & Nyagatare Stadiums 🏟️</p>
+            <p className="opacity-90 mb-6">
+              Design & Implementation – Ngoma, Bugesera & Nyagatare Stadiums 🏟️
+            </p>
             <div className="space-y-3">
               {[
                 "Designed and installed powerful stadium lighting systems, ensuring top-notch visibility for games and events",
@@ -84,10 +96,17 @@ const Projects = () => {
           {/* Manufacturing Project - NEW */}
           <div className="bg-white/10 rounded-xl p-8 backdrop-blur-sm">
             <div className="flex items-center gap-3 mb-4">
-              <Badge className="bg-gm-yellow text-gm-darkblue hover:bg-gm-yellow/90">Manufacturing</Badge>
-              <h3 className="text-2xl font-semibold">Metal Street Lights Poles</h3>
+              <Badge className="bg-gm-yellow text-gm-darkblue hover:bg-gm-yellow/90">
+                Manufacturing
+              </Badge>
+              <h3 className="text-2xl font-semibold">
+                Metal Street Lights Poles
+              </h3>
             </div>
-            <p className="opacity-90 mb-6">Design & Production – High-Quality Street Lighting Infrastructure 💡</p>
+            <p className="opacity-90 mb-6">
+              Design & Production – High-Quality Street Lighting Infrastructure
+              💡
+            </p>
             <div className="space-y-3">
               {[
                 "State-of-the-art manufacturing facility producing durable, weather-resistant metal street light poles",
@@ -114,16 +133,18 @@ const Projects = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <h3 className="text-xl mb-3 font-semibold">Innovation. Precision. Reliability.</h3>
+          <h3 className="text-xl mb-3 font-semibold">
+            Innovation. Precision. Reliability.
+          </h3>
           <p className="max-w-2xl mx-auto opacity-90">
-            GM Electrics is proud to be a driving force behind Rwanda's electrical transformation, empowering industries
-            and communities through cutting-edge engineering solutions. 🚀
+            GM Electrics is proud to be a driving force behind Rwanda's
+            electrical transformation, empowering industries and communities
+            through cutting-edge engineering solutions. 🚀
           </p>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
-
+export default Projects;

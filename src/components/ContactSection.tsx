@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -86,15 +85,16 @@ const ContactSection = () => {
                   <Phone className="w-5 h-5 text-gm-yellow mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium mb-1">Phone</h4>
-                    <p className="opacity-90">+250 789 532 044</p>
+                    <p className="opacity-90">
+                      <a href="tel:+250788306260">+250788306260</a>
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Mail className="w-5 h-5 text-gm-yellow mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium mb-1">Email</h4>
-                    <p className="opacity-90">gmelectricsrw@gmail.com</p>
-                    <p className="opacity-90">mabano05@gmail.com</p>
+                    <p className="opacity-90">bpmasterjerb@gmail.com</p>
                   </div>
                 </div>
               </div>

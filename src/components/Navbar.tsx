@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Logo from '../assets/images/logo.png'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,7 +26,11 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
-          <Zap className="w-8 h-8 text-gm-yellow mr-2" />
+          <img 
+            src={Logo}
+            alt="GM Electrics Logo"
+            className="w-20 h-15 mr-2 object-contain" 
+          />
           <span className="text-2xl font-bold text-gm-yellow">
             GM{" "}
             <span className={isScrolled ? "text-gm-gray" : "text-white"}>

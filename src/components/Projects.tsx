@@ -1,10 +1,14 @@
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle } from "lucide-react";
+import { Button } from "@/components/ui/button"
+import { ChevronLeft } from "lucide-react"
+import { useNavigate } from 'react-router-dom'; 
 import poles from "../assets/images/poles.jpeg";
 import stadium from "../assets/images/stadium.jpg";
 import airport from "../assets/images/kia.jpg";
 
 const Projects = () => {
+  const navigate = useNavigate()
   return (
     <section id="projects" className="py-16 md:py-24 bg-gm-blue text-white">
       <div className="container mx-auto px-4">
@@ -142,6 +146,19 @@ const Projects = () => {
             through cutting-edge engineering solutions. 🚀
           </p>
         </div>
+      </div>
+      <div className="mb-12 mt-5 flex justify-center">
+        <Button
+          onClick={() => navigate('/gallery')}
+          variant="outline"
+          className="gap-2 border-2 border-gm-darkblue text-gm-darkblue 
+                    hover:bg-gm-darkblue hover:text-white transition-colors 
+                    duration-300 rounded-lg px-6 py-3 text-lg font-medium 
+                    shadow-sm hover:shadow-md"
+        >
+          <ChevronLeft className="h-5 w-5" />
+          View Full Gallery
+        </Button>
       </div>
     </section>
   );

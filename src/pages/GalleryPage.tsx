@@ -34,7 +34,6 @@ const GalleryPage = () => {
 
   return (
     <section className="pt-24 pb-12 px-4 container mx-auto">
-      {/* Back button with improved visibility */}
       <div className="mb-8">
         <Button
           onClick={() => navigate(-1)}

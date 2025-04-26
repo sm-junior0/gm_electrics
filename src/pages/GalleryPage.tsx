@@ -11,7 +11,6 @@ import LightingDesign from "../assets/images/about.jpg"
 
 const GalleryPage = () => {
   const navigate = useNavigate()
-
   const mediaItems = [
     {
       type: "image",

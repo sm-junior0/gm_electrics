@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import Logo from '../assets/images/logo.png'
 
 const Navbar = () => {
@@ -18,6 +19,15 @@ const Navbar = () => {
     };
   }, []);
 
+  const navItems = [
+    { name: "Home", path: "/#home", isHashLink: true },
+    { name: "About", path: "/#about", isHashLink: true },
+    { name: "Services", path: "/#services", isHashLink: true },
+    { name: "Projects", path: "/#projects", isHashLink: true },
+    { name: "gallery", path: "/gallery", isHashLink: false },
+    { name: "Contact", path: "/#contact", isHashLink: true }
+  ];
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -26,11 +36,13 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
-          <img 
-            src={Logo}
-            alt="GM Electrics Logo"
-            className="w-20 h-15 mr-2 object-contain" 
-          />
+          <Link to="/">
+            <img 
+              src={Logo}
+              alt="GM Electrics Logo"
+              className="w-20 h-15 mr-2 object-contain" 
+            />
+          </Link>
           <span className="text-2xl font-bold text-gm-yellow">
             GM{" "}
             <span className={isScrolled ? "text-gm-gray" : "text-white"}>
@@ -41,22 +53,33 @@ const Navbar = () => {
 
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
-            {["Home", "About", "Services", "Projects", "Contact"].map(
-              (item) => (
-                <li key={item}>
+            {navItems.map((item) => (
+              <li key={item.name}>
+                {item.isHashLink ? (
                   <a
-                    href={`#${item.toLowerCase()}`}
+                    href={item.path}
                     className={`font-medium transition-colors ${
                       isScrolled
                         ? "text-gm-gray hover:text-gm-blue"
                         : "text-white hover:text-gm-yellow"
                     }`}
                   >
-                    {item}
+                    {item.name}
                   </a>
-                </li>
-              )
-            )}
+                ) : (
+                  <Link
+                    to={item.path}
+                    className={`font-medium transition-colors ${
+                      isScrolled
+                        ? "text-gm-gray hover:text-gm-blue"
+                        : "text-white hover:text-gm-yellow"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                )}
+              </li>
+            ))}
           </ul>
         </nav>
 
@@ -90,19 +113,27 @@ const Navbar = () => {
         <div className="md:hidden bg-white shadow-lg py-4 animate-fade-in">
           <div className="container mx-auto px-4">
             <ul className="space-y-4">
-              {["Home", "About", "Services", "Projects", "Contact"].map(
-                (item) => (
-                  <li key={item}>
+              {navItems.map((item) => (
+                <li key={item.name}>
+                  {item.isHashLink ? (
                     <a
-                      href={`#${item.toLowerCase()}`}
+                      href={item.path}
                       className="block text-gm-gray hover:text-gm-blue font-medium transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      {item}
+                      {item.name}
                     </a>
-                  </li>
-                )
-              )}
+                  ) : (
+                    <Link
+                      to={item.path}
+                      className="block text-gm-gray hover:text-gm-blue font-medium transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </li>
+              ))}
               <li className="pt-2">
                 <Button
                   variant="default"

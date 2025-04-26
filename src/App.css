@@ -40,3 +40,27 @@
 .read-the-docs {
   color: #888;
 }
+/* Gallery Styles */
+.gallery-container {
+  @apply py-8;
+}
+
+.gallery-item {
+  @apply transition-transform duration-300 hover:scale-105 overflow-hidden rounded-lg;
+}
+
+/* Lightbox transitions */
+.lightbox-enter {
+  opacity: 0;
+}
+.lightbox-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.lightbox-exit {
+  opacity: 1;
+}
+.lightbox-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}

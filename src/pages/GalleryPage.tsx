@@ -5,28 +5,169 @@ import { Button } from "@/components/ui/button"
 import { ChevronLeft } from "lucide-react"
 
 // Image imports
-import ElectricalInstallation from "../assets/images/about.jpg"
-import PanelUpgrade from "../assets/images/about.jpg"
-import LightingDesign from "../assets/images/about.jpg"
+import image1 from "../assets/images/images/1.png"
+import image2 from "../assets/images/images/2.png"
+import image3 from "../assets/images/images/3.png"
+import image4 from "../assets/images/images/4.png"
+import image5 from "../assets/images/images/5.png"
+import image6 from "../assets/images/images/6.png"
+import image7 from "../assets/images/images/7.png"
+import image8 from "../assets/images/images/8.png"
+import image9 from "../assets/images/images/9.png"
+import image10 from "../assets/images/images/10.png"
+import image11 from "../assets/images/images/11.png"
+import image12 from "../assets/images/images/12.png"
+import image13 from "../assets/images/images/13.png"
+import image14 from "../assets/images/images/14.png"
+import image15 from "../assets/images/images/15.png"
+import image16 from "../assets/images/images/16.png"
+import image17 from "../assets/images/images/17.png"
+import image18 from "../assets/images/images/18.png"
+import image19 from "../assets/images/images/19.jpg"
+import image20 from "../assets/images/images/20.jpg"
+import image21 from "../assets/images/images/21.jpg"
+import image22 from "../assets/images/images/22.jpg"
+import image23 from "../assets/images/images/23.jpg"
+
 
 const GalleryPage = () => {
   const navigate = useNavigate()
   const mediaItems = [
     {
       type: "image",
-      src: ElectricalInstallation,
-      alt: "Commercial electrical installation",
-      category: "commercial",
+      src: image1,
+      alt: "Custom lighting design",
+      category: "residential",
     },
     {
       type: "image",
-      src: PanelUpgrade,
-      alt: "Electrical panel upgrade",
-      category: "industrial",
+      src: image2,
+      alt: "Custom lighting design",
+      category: "residential",
     },
     {
       type: "image",
-      src: LightingDesign,
+      src: image3,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image4,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image5,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image6,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image7,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image8,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image9,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image10,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image11,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image12,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image13,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image14,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image15,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image16,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image17,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image18,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image19,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image20,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image21,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image22,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image23,
       alt: "Custom lighting design",
       category: "residential",
     },

@@ -33,7 +33,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
-                href="https://wa.me/250789532044" 
+                href="https://wa.me/250788306260" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gm-yellow hover:text-gm-darkblue transition-colors"
@@ -42,7 +42,7 @@ const Footer = () => {
                 <MessageCircle className="w-5 h-5" />
               </a>
               <a 
-                href="mailto:gmelectricsrw@gmail.com" 
+                href="mailto:bpmasterjerb@gmail.com" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gm-yellow hover:text-gm-darkblue transition-colors"

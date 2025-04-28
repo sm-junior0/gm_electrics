@@ -28,6 +28,36 @@ import image20 from "../assets/images/images/20.jpg"
 import image21 from "../assets/images/images/21.jpg"
 import image22 from "../assets/images/images/22.jpg"
 import image23 from "../assets/images/images/23.jpg"
+import image24 from "../assets/images/images/24.png"
+import image25 from "../assets/images/images/25.png"
+import image26 from "../assets/images/images/26.png"
+import image27 from "../assets/images/images/27.png"
+import image28 from "../assets/images/images/28.png"
+import image29 from "../assets/images/images/29.png"
+import image30 from "../assets/images/images/30.png"
+import image31 from "../assets/images/images/31.png"
+import image32 from "../assets/images/images/32.png"
+import image33 from "../assets/images/images/33.png"
+import image34 from "../assets/images/images/34.png"
+import image35 from "../assets/images/images/35.png"
+import image36 from "../assets/images/images/36.png"
+import image37 from "../assets/images/images/37.png"
+import image38 from "../assets/images/images/38.png"
+import image39 from "../assets/images/images/39.png"
+import image40 from "../assets/images/images/40.png"
+import image41 from "../assets/images/images/41.png"
+import image42 from "../assets/images/images/42.png"
+import image43 from "../assets/images/images/43.png"
+import image44 from "../assets/images/images/44.png"
+import image45 from "../assets/images/images/45.png"
+import image46 from "../assets/images/images/46.png"
+import image47 from "../assets/images/images/47.png"
+import image48 from "../assets/images/images/48.png"
+import image49 from "../assets/images/images/49.png"
+import image50 from "../assets/images/images/50.jpg"
+import image51 from "../assets/images/images/51.jpg"
+import image52 from "../assets/images/images/52.jpg"
+import image53 from "../assets/images/images/53.jpg"
 
 
 const GalleryPage = () => {
@@ -171,6 +201,192 @@ const GalleryPage = () => {
       alt: "Custom lighting design",
       category: "residential",
     },
+    {
+      type: "image",
+      src: image23,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image24,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image25,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image26,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image27,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image28,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image29,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image30,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image31,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image32,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image33,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image34,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image35,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image36,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image37,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image38,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image39,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image40,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image41,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image42,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image43,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image44,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image45,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image46,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image47,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image48,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image49,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image50,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image51,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image52,
+      alt: "Custom lighting design",
+      category: "residential",
+    },
+    {
+      type: "image",
+      src: image53,
+      alt: "Custom lighting design",
+      category: "residential",
+    }
   ]
 
   return (

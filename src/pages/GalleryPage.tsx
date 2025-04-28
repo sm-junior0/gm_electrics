@@ -1,67 +1,66 @@
-"use client"
-import Gallery from "../components/Gallery"
-import { useNavigate } from "react-router-dom"
-import { Button } from "@/components/ui/button"
-import { ChevronLeft } from "lucide-react"
+"use client";
+import Gallery from "../components/Gallery";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { ChevronLeft } from "lucide-react";
 
 // Image imports
-import image1 from "../assets/images/images/1.png"
-import image2 from "../assets/images/images/2.png"
-import image3 from "../assets/images/images/3.png"
-import image4 from "../assets/images/images/4.png"
-import image5 from "../assets/images/images/5.png"
-import image6 from "../assets/images/images/6.png"
-import image7 from "../assets/images/images/7.png"
-import image8 from "../assets/images/images/8.png"
-import image9 from "../assets/images/images/9.png"
-import image10 from "../assets/images/images/10.png"
-import image11 from "../assets/images/images/11.png"
-import image12 from "../assets/images/images/12.png"
-import image13 from "../assets/images/images/13.png"
-import image14 from "../assets/images/images/14.png"
-import image15 from "../assets/images/images/15.png"
-import image16 from "../assets/images/images/16.png"
-import image17 from "../assets/images/images/17.png"
-import image18 from "../assets/images/images/18.png"
-import image19 from "../assets/images/images/19.jpg"
-import image20 from "../assets/images/images/20.jpg"
-import image21 from "../assets/images/images/21.jpg"
-import image22 from "../assets/images/images/22.jpg"
-import image23 from "../assets/images/images/23.jpg"
-import image24 from "../assets/images/images/24.png"
-import image25 from "../assets/images/images/25.png"
-import image26 from "../assets/images/images/26.png"
-import image27 from "../assets/images/images/27.png"
-import image28 from "../assets/images/images/28.png"
-import image29 from "../assets/images/images/29.png"
-import image30 from "../assets/images/images/30.png"
-import image31 from "../assets/images/images/31.png"
-import image32 from "../assets/images/images/32.png"
-import image33 from "../assets/images/images/33.png"
-import image34 from "../assets/images/images/34.png"
-import image35 from "../assets/images/images/35.png"
-import image36 from "../assets/images/images/36.png"
-import image37 from "../assets/images/images/37.png"
-import image38 from "../assets/images/images/38.png"
-import image39 from "../assets/images/images/39.png"
-import image40 from "../assets/images/images/40.png"
-import image41 from "../assets/images/images/41.png"
-import image42 from "../assets/images/images/42.png"
-import image43 from "../assets/images/images/43.png"
-import image44 from "../assets/images/images/44.png"
-import image45 from "../assets/images/images/45.png"
-import image46 from "../assets/images/images/46.png"
-import image47 from "../assets/images/images/47.png"
-import image48 from "../assets/images/images/48.png"
-import image49 from "../assets/images/images/49.png"
-import image50 from "../assets/images/images/50.jpg"
-import image51 from "../assets/images/images/51.jpg"
-import image52 from "../assets/images/images/52.jpg"
-import image53 from "../assets/images/images/53.jpg"
-
+import image1 from "../assets/images/images/1.png";
+import image2 from "../assets/images/images/2.png";
+import image3 from "../assets/images/images/3.png";
+import image4 from "../assets/images/images/4.png";
+import image5 from "../assets/images/images/5.png";
+import image6 from "../assets/images/images/6.png";
+import image7 from "../assets/images/images/7.png";
+import image8 from "../assets/images/images/8.png";
+import image9 from "../assets/images/images/9.png";
+import image10 from "../assets/images/images/10.png";
+import image11 from "../assets/images/images/11.png";
+import image12 from "../assets/images/images/12.png";
+import image13 from "../assets/images/images/13.png";
+import image14 from "../assets/images/images/14.png";
+import image15 from "../assets/images/images/15.png";
+import image16 from "../assets/images/images/16.png";
+import image17 from "../assets/images/images/17.png";
+import image18 from "../assets/images/images/18.png";
+import image19 from "../assets/images/images/19.jpg";
+import image20 from "../assets/images/images/20.jpg";
+import image21 from "../assets/images/images/21.jpg";
+import image22 from "../assets/images/images/22.jpg";
+import image23 from "../assets/images/images/23.jpg";
+import image24 from "../assets/images/images/24.png";
+import image25 from "../assets/images/images/25.png";
+import image26 from "../assets/images/images/26.png";
+import image27 from "../assets/images/images/27.png";
+import image28 from "../assets/images/images/28.png";
+import image29 from "../assets/images/images/29.png";
+import image30 from "../assets/images/images/30.png";
+import image31 from "../assets/images/images/31.png";
+import image32 from "../assets/images/images/32.png";
+import image33 from "../assets/images/images/33.png";
+import image34 from "../assets/images/images/34.png";
+import image35 from "../assets/images/images/35.png";
+import image36 from "../assets/images/images/36.png";
+import image37 from "../assets/images/images/37.png";
+import image38 from "../assets/images/images/38.png";
+import image39 from "../assets/images/images/39.png";
+import image40 from "../assets/images/images/40.png";
+import image41 from "../assets/images/images/41.png";
+import image42 from "../assets/images/images/42.png";
+import image43 from "../assets/images/images/43.png";
+import image44 from "../assets/images/images/44.png";
+import image45 from "../assets/images/images/45.png";
+import image46 from "../assets/images/images/46.png";
+import image47 from "../assets/images/images/47.png";
+import image48 from "../assets/images/images/48.png";
+import image49 from "../assets/images/images/49.png";
+import image50 from "../assets/images/images/50.jpg";
+import image51 from "../assets/images/images/51.jpg";
+import image52 from "../assets/images/images/52.jpg";
+import image53 from "../assets/images/images/53.jpg";
 
 const GalleryPage = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const mediaItems = [
     {
       type: "image",
@@ -386,8 +385,8 @@ const GalleryPage = () => {
       src: image53,
       alt: "Custom lighting design",
       category: "residential",
-    }
-  ]
+    },
+  ];
 
   return (
     <section className="pt-24 pb-12 px-4 container mx-auto">
@@ -415,7 +414,7 @@ const GalleryPage = () => {
         <Gallery mediaItems={mediaItems} />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default GalleryPage
+export default GalleryPage;

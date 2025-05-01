@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, User } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -81,22 +81,56 @@ const ContactSection = () => {
                     <p className="opacity-90 mt-1">P.O. BOX: 1569, Kigali-Rwanda</p>
                   </div>
                 </div>
-                <div className="flex items-start">
-                  <Phone className="w-5 h-5 text-gm-yellow mr-3 mt-1" />
-                  <div>
-                    <h4 className="font-medium mb-1">Phone</h4>
-                    <p className="opacity-90">
-                      <a href="tel:+250788306260">+250788306260</a>
-                    </p>
+
+                   {/* Chairman Contact */}
+                   <div className="border-t border-gm-lightblue pt-4">
+                  <div className="flex items-start mb-3">
+                    <User className="w-5 h-5 text-gm-yellow mr-3 mt-1" />
+                    <div>
+                      <h4 className="font-medium">Chairman</h4>
+                    </div>
+                  </div>
+                  <div className="flex items-start ml-8 mb-2">
+                    <Phone className="w-5 h-5 text-gm-yellow mr-3 mt-1" />
+                    <div>
+                      <p className="opacity-90">
+                        <a href="tel:+250788306260">+250788306260</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start ml-8">
+                    <Mail className="w-5 h-5 text-gm-yellow mr-3 mt-1" />
+                    <div>
+                      <p className="opacity-90">bpmasterjerb@gmail.com</p>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-start">
-                  <Mail className="w-5 h-5 text-gm-yellow mr-3 mt-1" />
-                  <div>
-                    <h4 className="font-medium mb-1">Email</h4>
-                    <p className="opacity-90">bpmasterjerb@gmail.com</p>
+
+                {/* Managing Director Contact */}
+                <div className="border-t border-gm-lightblue pt-4">
+                  <div className="flex items-start mb-3">
+                    <User className="w-5 h-5 text-gm-yellow mr-3 mt-1" />
+                    <div>
+                      <h4 className="font-medium">Managing Director</h4>
+                    </div>
+                  </div>
+                  <div className="flex items-start ml-8 mb-2">
+                    <Phone className="w-5 h-5 text-gm-yellow mr-3 mt-1" />
+                    <div>
+                      <p className="opacity-90">
+                        <a href="tel:+250789532044">+250789532044</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start ml-8">
+                    <Mail className="w-5 h-5 text-gm-yellow mr-3 mt-1" />
+                    <div>
+                      <p className="opacity-90">gmelectricsrw@gmail.com</p>
+                    </div>
                   </div>
                 </div>
+
+             
               </div>
             </div>
 

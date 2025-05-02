@@ -82,7 +82,7 @@ const ContactSection = () => {
                   </div>
                 </div>
 
-                   {/* Chairman Contact */}
+                  {/* Chairman Contact */}
                    <div className="border-t border-gm-lightblue pt-4">
                   <div className="flex items-start mb-3">
                     <User className="w-5 h-5 text-gm-yellow mr-3 mt-1" />
@@ -94,15 +94,15 @@ const ContactSection = () => {
                     <Phone className="w-5 h-5 text-gm-yellow mr-3 mt-1" />
                     <div>
                       <p className="opacity-90">
-                        <a href="tel:+250788306260">+250788306260</a>
+                        <a href="tel:+250788306260">+250 788 306 260</a>
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start ml-8">
                     <Mail className="w-5 h-5 text-gm-yellow mr-3 mt-1" />
-                    <div>
-                      <p className="opacity-90">bpmasterjerb@gmail.com</p>
-                    </div>
+                    <a href="mailto:bpmasterjerb@gmail.com" className="text-white/80 hover:text-gm-yellow text-sm">
+                    bpmasterjerb@gmail.com
+                  </a>
                   </div>
                 </div>
 
@@ -118,14 +118,16 @@ const ContactSection = () => {
                     <Phone className="w-5 h-5 text-gm-yellow mr-3 mt-1" />
                     <div>
                       <p className="opacity-90">
-                        <a href="tel:+250789532044">+250789532044</a>
+                        <a href="tel:+250789532044">+250 789 532 044</a>
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start ml-8">
                     <Mail className="w-5 h-5 text-gm-yellow mr-3 mt-1" />
                     <div>
-                      <p className="opacity-90">gmelectricsrw@gmail.com</p>
+                    <a href="mailto:bpmasterjerb@gmail.com" className="text-white/80 hover:text-gm-yellow text-sm">
+                  gmelectricsrw@gmail.com
+                  </a>
                     </div>
                   </div>
                 </div>

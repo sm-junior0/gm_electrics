@@ -1,4 +1,4 @@
-import { Zap, Phone, Mail, MapPin, ArrowRight, Facebook, Instagram, Mail as MailIcon, MessageCircle } from "lucide-react";
+import { Zap, Phone, Mail, MapPin, ArrowRight, Facebook, Instagram, Mail as MailIcon, MessageCircle, User } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -102,13 +102,45 @@ const Footer = () => {
                   Kicukiro, Niboye, Avenue KK502, Kigali, Rwanda
                 </span>
               </li>
-              <li className="flex">
-                <Phone className="w-5 h-5 text-gm-yellow mr-3 shrink-0" />
-                <span className="text-white/80">+250 789 532 044</span>
+
+              {/* Managing Director Contact */}
+              <li className="pt-2">
+                <div className="flex items-center mb-1">
+                  <User className="w-4 h-4 text-gm-yellow mr-2" />
+                  <span className="font-medium text-sm">Managing Director</span>
+                </div>
+                <div className="flex items-center ml-6 mb-1">
+                  <Phone className="w-4 h-4 text-gm-yellow mr-2" />
+                  <a href="tel:+250788306260" className="text-white/80 hover:text-gm-yellow text-sm">
+                  +250 789 532 044
+                  </a>
+                </div>
+                <div className="flex items-center ml-6">
+                  <Mail className="w-4 h-4 text-gm-yellow mr-2" />
+                  <a href="mailto:bpmasterjerb@gmail.com" className="text-white/80 hover:text-gm-yellow text-sm">
+                  gmelectricsrw@gmail.com
+                  </a>
+                </div>
               </li>
-              <li className="flex">
-                <Mail className="w-5 h-5 text-gm-yellow mr-3 shrink-0" />
-                <span className="text-white/80">bpmasterjerb@gmail.com</span>
+
+              {/* Chairman Contact */}
+              <li className="pt-2">
+                <div className="flex items-center mb-1">
+                  <User className="w-4 h-4 text-gm-yellow mr-2" />
+                  <span className="font-medium text-sm">Chairman</span>
+                </div>
+                <div className="flex items-center ml-6 mb-1">
+                  <Phone className="w-4 h-4 text-gm-yellow mr-2" />
+                  <a href="tel:+250788123456" className="text-white/80 hover:text-gm-yellow text-sm">
+                  +250 788 306 260
+                  </a>
+                </div>
+                <div className="flex items-center ml-6">
+                  <Mail className="w-4 h-4 text-gm-yellow mr-2" />
+                  <a href="mailto:chairman@gm-electrical.com" className="text-white/80 hover:text-gm-yellow text-sm">
+                  bpmasterjerb@gmail.com
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

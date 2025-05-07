@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X, ChevronLeft, ChevronRight, Play } from 'lucide-react';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X, ChevronLeft, ChevronRight, Play } from "lucide-react";
 
 const Gallery = ({ mediaItems }) => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -16,7 +16,7 @@ const Gallery = ({ mediaItems }) => {
             whileHover={{ scale: 1.02 }}
             onClick={() => setSelectedItem(index)}
           >
-            {item.type === 'image' ? (
+            {item.type === "image" ? (
               <img
                 src={item.src}
                 alt={item.alt}
@@ -62,12 +62,12 @@ const Gallery = ({ mediaItems }) => {
 
             <div className="relative max-w-6xl w-full h-full flex items-center">
               <button
-              title="close"
+                title="close"
                 className="absolute left-4 text-white hover:text-yellow-400 z-10"
                 onClick={(e) => {
                   e.stopPropagation();
-                  setSelectedItem((prev) => 
-                    (prev - 1 + mediaItems.length) % mediaItems.length
+                  setSelectedItem(
+                    (prev) => (prev - 1 + mediaItems.length) % mediaItems.length
                   );
                 }}
               >
@@ -81,7 +81,7 @@ const Gallery = ({ mediaItems }) => {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.2 }}
               >
-                {mediaItems[selectedItem].type === 'image' ? (
+                {mediaItems[selectedItem].type === "image" ? (
                   <img
                     src={mediaItems[selectedItem].src}
                     alt={mediaItems[selectedItem].alt}
@@ -98,7 +98,7 @@ const Gallery = ({ mediaItems }) => {
               </motion.div>
 
               <button
-              title="close"
+                title="close"
                 className="absolute right-4 text-white hover:text-yellow-400 z-10"
                 onClick={(e) => {
                   e.stopPropagation();
@@ -110,7 +110,8 @@ const Gallery = ({ mediaItems }) => {
             </div>
 
             <div className="absolute bottom-8 left-0 right-0 text-center text-white">
-              {selectedItem + 1} of {mediaItems.length} - {mediaItems[selectedItem]?.alt}
+              {selectedItem + 1} of {mediaItems.length} -{" "}
+              {mediaItems[selectedItem]?.alt}
             </div>
           </motion.div>
         )}

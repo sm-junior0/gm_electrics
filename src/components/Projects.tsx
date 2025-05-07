@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ChevronLeft } from "lucide-react"
 import { useNavigate } from 'react-router-dom'; 
 import poles from "../assets/images/poles.jpeg";
-import stadium from "../assets/images/stadium.jpg";
+import stad from "../assets/images/stadium.png";
 import airport from "../assets/images/kia.jpg";
 
 const Projects = () => {
@@ -89,7 +89,7 @@ const Projects = () => {
             </div>
             <div className="mt-6 relative h-48 rounded-lg overflow-hidden">
               <img
-                src={stadium}
+                src={stad}
                 alt="Stadium Development Projects"
                 className="w-full h-full object-cover"
               />

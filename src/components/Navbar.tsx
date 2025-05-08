@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import Logo from '../assets/images/logo.png'
+import Logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
     { name: "Services", path: "/#services", isHashLink: true },
     { name: "Projects", path: "/#projects", isHashLink: true },
     { name: "gallery", path: "/gallery", isHashLink: false },
-    { name: "Contact", path: "/#contact", isHashLink: true }
+    { name: "Contact", path: "/#contact", isHashLink: true },
   ];
 
   return (
@@ -37,10 +37,10 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
           <Link to="/">
-            <img 
+            <img
               src={Logo}
               alt="GM Electrics Logo"
-              className="w-20 h-15 mr-2 object-contain" 
+              className="w-20 h-15 mr-2 object-contain"
             />
           </Link>
           <span className="text-2xl font-bold text-gm-yellow">

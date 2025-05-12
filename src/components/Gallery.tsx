@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight, Play } from "lucide-react";
-import { useVirtualizer } from '@tanstack/react-virtual';
+import { useVirtualizer } from "@tanstack/react-virtual";
 
 const Gallery = ({ mediaItems }) => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -23,8 +23,8 @@ const Gallery = ({ mediaItems }) => {
     };
 
     handleResize(); // Initial calculation
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // Virtualization setup with dynamic columns
@@ -36,21 +36,21 @@ const Gallery = ({ mediaItems }) => {
   });
 
   const handleImageLoad = (index) => {
-    setLoadedImages(prev => ({ ...prev, [index]: true }));
+    setLoadedImages((prev) => ({ ...prev, [index]: true }));
   };
 
   return (
     <div className="gallery-container">
       {/* Grid Layout with Virtualization */}
-      <div 
-        ref={parentRef} 
+      <div
+        ref={parentRef}
         className="h-[calc(100vh-12rem)] sm:h-[calc(100vh-14rem)] md:h-[calc(100vh-16rem)] overflow-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent"
       >
         <div
           style={{
             height: `${rowVirtualizer.getTotalSize()}px`,
-            width: '100%',
-            position: 'relative',
+            width: "100%",
+            position: "relative",
           }}
         >
           {rowVirtualizer.getVirtualItems().map((virtualRow) => {
@@ -61,17 +61,19 @@ const Gallery = ({ mediaItems }) => {
               <div
                 key={virtualRow.index}
                 style={{
-                  position: 'absolute',
+                  position: "absolute",
                   top: 0,
                   left: 0,
-                  width: '100%',
+                  width: "100%",
                   height: `${virtualRow.size}px`,
                   transform: `translateY(${virtualRow.start}px)`,
                 }}
                 className={`grid gap-4 p-4 ${
-                  columns === 1 ? 'grid-cols-1' :
-                  columns === 2 ? 'grid-cols-1 sm:grid-cols-2' :
-                  'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
+                  columns === 1
+                    ? "grid-cols-1"
+                    : columns === 2
+                    ? "grid-cols-1 sm:grid-cols-2"
+                    : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
                 }`}
               >
                 {rowItems.map((item, index) => {

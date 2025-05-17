@@ -151,7 +151,7 @@ const Projects = () => {
         <Button
           onClick={() => navigate('/gallery')}
           variant="outline"
-          className="gap-2 border-2 border-gm-darkblue text-gm-darkblue 
+          className="flex items-center gap-2 border-2 border-gm-darkblue text-gm-darkblue 
                     hover:bg-gm-darkblue hover:text-white transition-colors 
                     duration-300 rounded-lg px-6 py-3 text-lg font-medium 
                     shadow-sm hover:shadow-md"

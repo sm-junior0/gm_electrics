@@ -84,17 +84,19 @@ const Navbar = () => {
 
         <div className="hidden md:flex gap-4">
           <Button
+            asChild
             variant="default"
             className="bg-gm-blue hover:bg-gm-darkblue text-white font-medium"
           >
-            Our Services
+            <a href="#services">Our Services</a>
           </Button>
 
           <Button
+            asChild
             variant="default"
             className="bg-gm-yellow hover:bg-yellow-500 text-gm-darkblue font-medium"
           >
-            Get A Quote
+            <a href="#contact">Contact Us</a>
           </Button>
         </div>
 
@@ -135,18 +137,20 @@ const Navbar = () => {
               ))}
               <li className="pt-2">
                 <Button
+                  asChild
                   variant="default"
                   className="w-full bg-gm-blue hover:bg-gm-darkblue text-white font-medium"
                 >
-                  Our Services
+                  <a href="#services">Our Services</a>
                 </Button>
               </li>
               <li className="pt-2">
                 <Button
+                  asChild
                   variant="default"
                   className="w-full bg-gm-yellow hover:bg-yellow-500 text-gm-darkblue font-medium"
                 >
-                  Get A Quote
+                  <a href="#contact">Contact Us</a>
                 </Button>
               </li>
             </ul>

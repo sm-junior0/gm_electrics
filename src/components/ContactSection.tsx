@@ -24,7 +24,12 @@ const ContactSection = () => {
             <h3 className="text-2xl font-semibold text-gm-darkblue mb-6">
               Send Us a Message
             </h3>
-            <form className="space-y-6">
+            <form 
+              className="space-y-6"
+              action="mailto:juniormanene@gmail.com"
+              method="post"
+              encType="text/plain"
+            >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label
@@ -33,7 +38,7 @@ const ContactSection = () => {
                   >
                     Full Name
                   </label>
-                  <Input id="name" placeholder="Your name" className="w-full" />
+                  <Input id="name" name="name" placeholder="Your name" className="w-full" required />
                 </div>
                 <div>
                   <label
@@ -44,9 +49,11 @@ const ContactSection = () => {
                   </label>
                   <Input
                     id="email"
+                    name="email"
                     type="email"
                     placeholder="Your email"
                     className="w-full"
+                    required
                   />
                 </div>
               </div>
@@ -59,8 +66,10 @@ const ContactSection = () => {
                 </label>
                 <Input
                   id="subject"
+                  name="subject"
                   placeholder="How can we help you?"
                   className="w-full"
+                  required
                 />
               </div>
               <div>
@@ -72,11 +81,13 @@ const ContactSection = () => {
                 </label>
                 <Textarea
                   id="message"
+                  name="message"
                   placeholder="Your message"
                   className="w-full min-h-[120px]"
+                  required
                 />
               </div>
-              <Button className="w-full bg-gm-blue hover:bg-gm-darkblue text-white">
+              <Button type="submit" className="w-full bg-gm-blue hover:bg-gm-darkblue text-white">
                 Send Message
               </Button>
             </form>

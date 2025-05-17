@@ -24,6 +24,7 @@ const Navbar = () => {
     { name: "About", path: "/#about", isHashLink: true },
     { name: "Services", path: "/#services", isHashLink: true },
     { name: "Projects", path: "/#projects", isHashLink: true },
+    { name: "Team", path: "/#team", isHashLink: true },
     { name: "gallery", path: "/gallery", isHashLink: false },
     { name: "Contact", path: "/#contact", isHashLink: true },
   ];

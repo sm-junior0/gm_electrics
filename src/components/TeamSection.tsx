@@ -1,23 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image1 from "../assets/images/team/chairman.png";
+import Image2 from "../assets/images/team/managingDirector.png";
+import Image3 from "../assets/images/team/marketingDirector.png";
 
 const teamMembers = [
   {
     name: "MASTERJERB BIRUNGI PAUL",
     role: "CHAIRMAN- Gm Electrics ",
-    image: "/team/chairman.png",
+    image: Image1,
     description: "Leading our team with expertise in sustainable energy solutions.",
   },
   {
     name: "ENG. MABANO GEORGE JOACHIM",
     role: "MANAGING Director- Gm Electrics ",
-    image: "/team/managingDirector.png",
+    image: Image2,
     description: "Specializing in large-scale electrical installations and team coordination.",
   },
   {         
     name: "ROSEMARY MUKAMWIZA",
     role: "MARKETING Director- Gm Electrics ",
-    image: "/team/marketingDirector.png",
+    image: Image3,
     description: "Expert in electrical engineering and sustainable design practices.",
   },
 ];

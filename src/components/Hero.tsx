@@ -47,14 +47,14 @@ const Hero = () => {
                 size="lg"
                 className="bg-gm-yellow hover:bg-yellow-500 text-gm-darkblue font-medium"
               >
-                Our Services
+                <a href="#services">Our Services</a>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="text-white border-white hover:bg-white/10 bg-white/10"
               >
-                Contact Us
+                 <a href="#contact">Contact Us</a>
               </Button>
             </div>
           </div>

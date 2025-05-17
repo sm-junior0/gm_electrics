@@ -1,4 +1,3 @@
-
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import AboutUs from "../components/AboutUs";
@@ -7,6 +6,7 @@ import Projects from "../components/Projects";
 import TeamSection from "../components/TeamSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Index = () => {
   return (
@@ -21,6 +21,7 @@ const Index = () => {
         <ContactSection />
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

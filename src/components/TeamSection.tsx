@@ -6,22 +6,19 @@ const teamMembers = [
     name: "MASTERJERB BIRUNGI PAUL",
     role: "CHAIRMAN- Gm Electrics ",
     image: "/team/chairman.png",
-    description: "With over 15 years of experience in electrical engineering, Masterjerb leads our team with expertise in sustainable energy solutions.",
-    linkedin: "https://linkedin.com/",
+    description: "Leading our team with expertise in sustainable energy solutions.",
   },
   {
     name: "ENG. MABANO GEORGE JOACHIM",
     role: "MANAGING Director- Gm Electrics ",
     image: "/team/managingDirector.png",
-    description: "10+ years of project management experience, specializing in large-scale electrical installations and team coordination.",
-    linkedin: "https://linkedin.com/",
+    description: "Specializing in large-scale electrical installations and team coordination.",
   },
-  {
+  {         
     name: "ROSEMARY MUKAMWIZA",
     role: "MARKETING Director- Gm Electrics ",
     image: "/team/marketingDirector.png",
-    description: "technical expert with a background in both electrical engineering and sustainable design practices.",
-    linkedin: "https://linkedin.com/",
+    description: "Expert in electrical engineering and sustainable design practices.",
   },
 ];
 
@@ -67,22 +64,6 @@ const TeamSection = () => {
                 </h3>
                 <p className="text-gm-darkblue font-medium mb-3">{member.role}</p>
                 <p className="text-gray-600 mb-4">{member.description}</p>
-                <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-gm-darkblue hover:text-blue-600 transition-colors"
-                >
-                  <svg
-                    className="w-5 h-5 mr-2"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                  </svg>
-                  Connect on LinkedIn
-                </a>
               </div>
             </motion.div>
           ))}

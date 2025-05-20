@@ -7,19 +7,19 @@ import Image3 from "../assets/images/team/marketingDirector.png";
 const teamMembers = [
   {
     name: "MASTERJERB BIRUNGI PAUL",
-    role: "CHAIRMAN- Gm Electrics ",
+    role: "CHAIRMAN- GM Electrics ",
     image: Image1,
     description: "Leading our team with expertise in sustainable energy solutions.",
   },
   {
     name: "ENG. MABANO GEORGE JOACHIM",
-    role: "MANAGING Director- Gm Electrics ",
+    role: "MANAGING Director- GM Electrics ",
     image: Image2,
     description: "Specializing in large-scale electrical installations and team coordination.",
   },
   {         
     name: "ROSEMARY MUKAMWIZA",
-    role: "MARKETING Director- Gm Electrics ",
+    role: "MARKETING Director- GM Electrics ",
     image: Image3,
     description: "Expert in electrical engineering and sustainable design practices.",
   },
